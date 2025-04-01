@@ -18,40 +18,17 @@
 @media (min-width: 3520px) { :root { --screen-width: 3520; } }
 @media (min-width: 3840px) { :root { --screen-width: 3840; } }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #000000;
-    --color-text: #F0F0F0;
-    --color-black: #0F0F0F;
-    --color-white: #FFFFFF;
-    --color-gray: #AAAAAA;
-    --color-blue: #00FFFF;
-    --color-red: #FF0000;
-    --color-yellow: #FFFF00;
-    --color-purple: #FF00FF;
-  }
-  button, input, textarea, select, option {
-    color-scheme: dark;
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-background: #FFFFFF
-    --color-text: #0F0F0F
-    --color-black: #000000;
-    --color-white: #F0F0F0;
-    --color-gray: #666666;
-    --color-blue: #00BFFF;
-    --color-red: #FF4000;
-    --color-yellow: #FFBF00;
-    --color-purple: #BF00FF;
-  }
-  button, input, textarea, select, option {
-    color-scheme: light;
-  }
-}
-
 :root {
+  --color-background: #000000;
+  --color-text: #F0F0F0;
+  --color-black: #0F0F0F;
+  --color-white: #FFFFFF;
+  --color-gray: #AAAAAA;
+  --color-blue: #00FFFF;
+  --color-red: #FF0000;
+  --color-yellow: #FFFF00;
+  --color-purple: #FF00FF;
+
   --font-size: 1rem;
   --font-size-ratio: calc(var(--screen-width) * 0.00025 + 1.2);
   --font-size-6: var(--font-size);
