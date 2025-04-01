@@ -15,12 +15,9 @@ $(c => {
 <code-block>
 <pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'fetch-data-example'</span>
 
-
 <span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { isLoading, error, data </span><span style="color:#FF7B72">as</span><span style="color:#E6EDF3"> users, fetchData } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetch-data.js'</span>
 
-
 <span style="color:#FF7B72">await</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'https://randomuser.me/api/?results=3'</span><span style="color:#E6EDF3">)</span>
-
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span>
@@ -44,7 +41,6 @@ $(c => {
 <pre><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> data</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">()</span>
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> error</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">()</span>
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> isLoading</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">)</span>
-
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#FF7B72"> =</span><span style="color:#FF7B72"> async</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">url</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#D2A8FF">  isLoading</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">true</span><span style="color:#E6EDF3">)</span>
