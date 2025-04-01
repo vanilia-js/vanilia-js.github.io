@@ -36,7 +36,7 @@ $(c => {
 </code-block>
 
     <div>    
-      <p>At the bottom we import component <strong>&lt;sample-counter&gt;</strong> that do not exists yet: <strong>&lt;script type="module" src="./sample-counter"&gt;</strong></p>
+      <p>At the bottom we import component <strong>&lt;sample-counter&gt;</strong> that do not exists yet: <strong>&lt;script type="module" src="./sample-counter.js"&gt;</strong></p>
       <br>
       <p>In the same folder create file <strong>sample-counter.js</strong> and write this code:</p>
     </div>
