@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Vanilia, JavaScript, JS, UI, front-end, framework, minimalistic, simple, efficient, signals, effects, components">
+  <meta name="description" content="Vanilia is a simple design pattern that can help you to progressively remove black-box bloatware from your tech stack.">
+  
+  <meta property="og:description" content="Vanilia is a simple design pattern that can help you to progressively remove black-box bloatware from your tech stack.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vanilia-js.github.io/">
+  <meta property="og:image" content="https://vanilia-js.github.io/assets/javascript.svg">
+  <meta property="og:title" content="Vanilia">
+  
+  <title>Vanilia</title>
+  
+  <link rel="canonical" href="https://vanilia-js.github.io/">
+  <link rel="icon" type="image/svg+xml" href="https://vanilia-js.github.io/assets/javascript.svg">
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="module">
+    let range = document.createRange()
+    export let $ = (value = undefined, tag = undefined, effects = new Set()) => {
+      let reload = (ctx, strs, vals) => ctx.replaceChildren(range.createContextualFragment(
+            strs.map((str, i) => str + (vals[i] ?? '')).join('')
+          )),
+          remove = (ctx) => ($ && effects.delete($)),
+          render = (ctx) => ($ = () => value(ctx), remove = value(ctx) || remove, $ = null)
+
+      typeof value === 'function' && (!tag ?
+        (render(), remove()) :
+        (!customElements.get(tag) && customElements.define(tag, class extends HTMLElement {
+          connectedCallback() { render(this) }
+          disconnectedCallback() { remove(this) }
+          html(strs, ...vals) { reload(this, strs, vals) }
+        }))
+      )
+        
+      return newValue => newValue === undefined ?
+        ($ && effects.add($), value) :
+        (queueMicrotask(() => effects.forEach($ => $())), value = newValue)
+    }
+    window['$'] = $
+  </script>
+  <script type="module" src="./introduction.js"></script>
+  <script type="module" src="./installation.js"></script>
+  <script type="module" src="./signal-function.js"></script>
+  <script type="module" src="./side-effect.js"></script>
+  <script type="module" src="./reactive-component.js"></script>
+  
+  <script type="module" src="./template-example.js"></script>
+  <script type="module" src="./styles-example.js"></script>
+  <script type="module" src="./conditionals-example.js"></script>
+  <script type="module" src="./loops-example.js"></script>
+  <script type="module" src="./events-example.js"></script>
+  <script type="module" src="./dom-reference-example.js"></script>
+
+  <script type="module" src="./declare-state-example.js"></script>
+  <script type="module" src="./update-state-example.js"></script>
+  <script type="module" src="./derived-state-example.js"></script>
+  <script type="module" src="./side-effect-example.js"></script>
+  <script type="module" src="./local-state-example.js"></script>
+  <script type="module" src="./shared-state-example.js"></script>
+  <script type="module" src="./mount-and-unmount-example.js"></script>
+  <script type="module" src="./fetch-data-example.js"></script>
+
+  <script type="module" src="./props-and-emits-example.js"></script>
+  <script type="module" src="./slots-example.js"></script>
+  <script type="module" src="./forms-example.js"></script>
+  <script type="module" src="./binding-example.js"></script>
+  <script type="module" src="./media-example.js"></script>
+  <script type="module" src="./animations-example.js"></script>
+
+
+  <script type="module" src="./nav-btns.js"></script>
+  <script type="module" src="./nav-links.js"></script>
+  <script type="module" src="./note-icons.js"></script>
+  <script type="module" src="./note-license.js"></script>
+</head>
+<body>
+  <main>
+    <introduction-guide id="introduction"></introduction-guide>
+    <installation-guide id="installation"></installation-guide>
+    <signal-function id="signal"></signal-function>
+    <side-effect id="effect"></side-effect>
+    <reactive-component id="component"></reactive-component>
+
+    <note-icons></note-icons>
+    
+    <template-example id="template"></template-example>
+    <styles-example id="styles"></styles-example>
+    <conditionals-example id="conditionals"></conditionals-example>
+    <loops-example id="loops"></loops-example>
+    <events-example id="events"></events-example>
+    <dom-reference-example id="dom-reference"></dom-reference-example>
+    
+    <declare-state-example id="declare-state"></declare-state-example>
+    <update-state-example id="update-state"></update-state-example>
+    <derived-state-example id="derived-state"></derived-state-example>
+    <side-effect-example id="side-effect"></side-effect-example>
+    <local-state-example id="local-state"></local-state-example>
+    <shared-state-example id="shared-state"></shared-state-example>
+    <mount-and-unmount-example id="mount-and-unmount"></mount-and-unmount-example>
+    <fetch-data-example id="fetch-data"></fetch-data-example>
+
+    <props-and-emits-example id="props-and-emits"></props-and-emits-example>
+    <slots-example id="slots"></slots-example>
+    <forms-example id="forms"></forms-example>
+    <binding-example id="binding"></binding-example>
+    <media-example id="media"></media-example>
+    <animations-example id="animations"></animations-example>
+
+    <note-license></note-license>
+  </main>
+  <nav-btns></nav-btns>
+  <nav-links></nav-links>
+</body>
+</html>
