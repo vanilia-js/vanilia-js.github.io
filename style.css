@@ -216,7 +216,7 @@ code-block  {
   display: block;
   border: 1px solid #6666;
   padding: var(--font-size-4);
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 code-file {
