@@ -15,32 +15,64 @@ $(c => {
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>local-state-example.js</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'local-state-example'</span></div><div class="line">
-</div><div class="line"><span style="color:#FF7B72">import</span><span style="color:#A5D6FF"> 'counter-btn.js'</span></div><div class="line">
-</div><div class="line"><span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span></div><div class="line"><span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#A5D6FF">  &#96;</span></div><div class="line"><span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></div></code></pre>
+<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'local-state-example'</span>
+
+<span style="color:#FF7B72">import</span><span style="color:#A5D6FF"> 'counter-btn.js'</span>
+
+<span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
+<span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span>
+<span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">counter-btn</span><span style="color:#E6EDF3">></span>
+<span style="color:#A5D6FF">  &#96;</span>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></pre>
 </code-block>
 
 <code-file>counter-btn.js</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'counter-btn'</span></div><div class="line">
-</div><div class="line"><span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span></div><div class="line"><span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span></div><div class="line"><span style="color:#E6EDF3">  </span></div><div class="line"><span style="color:#D2A8FF">  &#36;</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#FFA657"> c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">>Clicks: &#36;{</span><span style="color:#D2A8FF">counter</span><span style="color:#E6EDF3">()}&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#A5D6FF">  &#96;</span><span style="color:#E6EDF3">)</span></div><div class="line">
-</div><div class="line"><span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">onclick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> counter</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">counter</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span></div><div class="line"><span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></div></code></pre>
+<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'counter-btn'</span>
+
+<span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
+<span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
+<span style="color:#E6EDF3">  </span>
+<span style="color:#D2A8FF">  &#36;</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#FFA657"> c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span>
+<span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">>Clicks: &#36;{</span><span style="color:#D2A8FF">counter</span><span style="color:#E6EDF3">()}&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+<span style="color:#A5D6FF">  &#96;</span><span style="color:#E6EDF3">)</span>
+
+<span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">onclick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> counter</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">counter</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></pre>
 </code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>LocalStateExample.jsx</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.jsx'</span></div><div class="line">
-</div><div class="line"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LocalStateExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span></div><div class="line"><span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> (</span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;></span></div><div class="line"><span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;/></span></div><div class="line"><span style="color:#E6EDF3">  )</span></div><div class="line"><span style="color:#E6EDF3">}</span></div></code></pre>
+<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.jsx'</span>
+
+<span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LocalStateExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
+<span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> (</span>
+<span style="color:#E6EDF3">    &#x3C;></span>
+<span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">    &#x3C;/></span>
+<span style="color:#E6EDF3">  )</span>
+<span style="color:#E6EDF3">}</span></code></pre>
 </code-block>
 
 <code-file>CounterBtn.jsx</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span></div><div class="line">
-</div><div class="line"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LocalStateExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span></div><div class="line"><span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> [</span><span style="color:#79C0FF">count</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">setCount</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> useState</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span></div><div class="line">
-</div><div class="line"><span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> (</span></div><div class="line"><span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onClick</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> setCount</span><span style="color:#E6EDF3">(count </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">>Clicks: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">  )</span></div><div class="line"><span style="color:#E6EDF3">}</span></div><div class="line">
-</div>
+<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+
+<span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LocalStateExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
+<span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> [</span><span style="color:#79C0FF">count</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">setCount</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> useState</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
+
+<span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> (</span>
+<span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onClick</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> setCount</span><span style="color:#E6EDF3">(count </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">>Clicks: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">  )</span>
+<span style="color:#E6EDF3">}</span>
+
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -48,25 +80,47 @@ $(c => {
     ${framework() === 'vue' ? /*html*/`
 <code-file>LocalStateExample.vue</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.vue'</span><span style="color:#E6EDF3">;</span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line">
-</div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span></div>
+<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.vue'</span><span style="color:#E6EDF3">;</span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 
 </code></pre>
 </code-block>
 
 <code-file>CounterBtn.vue</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref, computed } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span></div><div class="line">
-</div><div class="line"><span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> counter</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> ref</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line">
-</div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3"> @</span><span style="color:#79C0FF">click</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">count.value </span><span style="color:#FF7B72">+=</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">    Clicks: {{counter}}</span></div><div class="line"><span style="color:#E6EDF3">  &#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span></div></code></pre>
+<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref, computed } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
+
+<span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> counter</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> ref</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3"> @</span><span style="color:#79C0FF">click</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">count.value </span><span style="color:#FF7B72">+=</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">    Clicks: {{counter}}</span>
+<span style="color:#E6EDF3">  &#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span></code></pre>
 </code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>LocalStateExample.svelte</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.svelte'</span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line">
-</div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span></div>
+<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> CounterBtn </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './CounterBtn.svelte'</span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
+
 
 
 
@@ -75,8 +129,14 @@ $(c => {
 
 <code-file>CounterBtn.svelte</code-file>
 <code-block>
-<pre><code><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span></div><div class="line">
-</div><div class="line"><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onclick</span><span style="color:#E6EDF3">=</span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">+=</span><span style="color:#79C0FF"> 1</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">></span></div><div class="line"><span style="color:#E6EDF3">  Clicks: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span></div><div class="line"><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span></div>
+<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+
+<span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onclick</span><span style="color:#E6EDF3">=</span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> counter </span><span style="color:#FF7B72">+=</span><span style="color:#79C0FF"> 1</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">></span>
+<span style="color:#E6EDF3">  Clicks: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+
 
 
 
