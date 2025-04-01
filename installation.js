@@ -21,7 +21,7 @@ $(c => {
 </code-block>
 
     <div>
-      <p>If you need a live preview, you may need to install a plugin for your editor. Look for "development local server" or if you use VSCode, you can try this one: <span class="underline"><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></span>.</p>
+      <p>If you need a live preview, you may need to install a plugin for your editor. Look for "development local server" or if you use VSCode, you can try this one: <span class="underline"><a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></span>.</p>
       <br>
       <p>Click the button several times to confirm that it is reactive. This is the core concept—a minimal implementation of reactivity that we will use.</p>
       <br>
@@ -50,7 +50,7 @@ $(c => {
 </code-block>
 
     <div>
-      <p>If your HTML is not highlighted, you may need to install a plugin for your editor. Look for "tagged template literals" or if you use VSCode, you can try this one: <span class="underline"><a href="https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html">es6-string-html</a></span>.</p>
+      <p>If your HTML is not highlighted, you may need to install a plugin for your editor. Look for "tagged template literals" or if you use VSCode, you can try this one: <span class="underline"><a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html">es6-string-html</a></span>.</p>
       <br>
       <p>Click the buttons several times to confirm that it is reactive. I will do my best to explain how it works—it’s not that hard.</p>
       <br>
