@@ -37,7 +37,7 @@ $(c => {
       <br>
       <p>Click the button several times to confirm that it is reactive. This is the core concept—a minimal implementation of reactivity that we will use.</p>
       <br>
-      <p>That was a small experiment. Now, replace <strong>index.html</strong> with the following code:</p>
+      <p>That was a little experiment. Now, replace <strong>index.html</strong> with the following code:</p>
       <mark id="code"></mark>
     </div>
 
