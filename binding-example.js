@@ -76,6 +76,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -111,6 +112,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -129,6 +131,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">output</span><span style="color:#79C0FF"> class</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"password"</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  {</span><span style="color:#E6EDF3">password </span><span style="color:#FF7B72">&#x26;&#x26;</span><span style="color:#E6EDF3"> password.</span><span style="color:#79C0FF">length</span><span style="color:#FF7B72"> &#x3C;</span><span style="color:#79C0FF"> 6</span><span style="color:#FF7B72"> ?</span><span style="color:#A5D6FF"> 'Password must be at least 6 characters long'</span><span style="color:#FF7B72"> :</span><span style="color:#A5D6FF"> ''</span><span style="color:#FF7B72">}</span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">output</span><span style="color:#E6EDF3">>&#x3C;</span><span style="color:#7EE787">br</span><span style="color:#E6EDF3"> /></span>
+
 
 
 
