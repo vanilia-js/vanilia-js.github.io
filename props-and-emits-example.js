@@ -41,6 +41,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
 
@@ -109,6 +110,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -143,6 +145,7 @@ $(c => {
 <span style="color:#E6EDF3">  /></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 
+
 </code></pre>
 </code-block>
 
@@ -157,6 +160,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3"> @</span><span style="color:#79C0FF">click</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#D2A8FF">emit</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'handleClick'</span><span style="color:#E6EDF3">)</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">>{{ label }}: {{ counterValue }}&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 
 
 
@@ -194,6 +198,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
 
@@ -204,6 +209,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onclick</span><span style="color:#E6EDF3">=</span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">handleClick</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">></span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">label</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counterValue</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+
 
 
 

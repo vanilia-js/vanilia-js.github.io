@@ -39,6 +39,7 @@ $(c => {
 <span style="color:#E6EDF3">  }</span>
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
+
 </code></pre>
 </code-block>
 
@@ -63,6 +64,7 @@ $(c => {
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#D2A8FF">  requestAnimationFrame</span><span style="color:#E6EDF3">(animation)</span>
 <span style="color:#E6EDF3">})</span>
+
 
 
 
@@ -123,6 +125,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -143,6 +146,7 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">p</span><span style="color:#FF7B72"> v-if</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">visible</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">>I am visible&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;/</span><span style="color:#7EE787">Transition</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 
 
 
@@ -180,6 +184,7 @@ $(c => {
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#D2A8FF">  requestAnimationFrame</span><span style="color:#E6EDF3">(animation)</span>
 <span style="color:#E6EDF3">}</span>
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -198,6 +203,7 @@ $(c => {
 <span style="color:#E6EDF3">{#</span><span style="color:#FF7B72">if</span><span style="color:#E6EDF3"> visible}</span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">p</span><span style="color:#FF7B72"> out</span><span style="color:#E6EDF3">:</span><span style="color:#FFA657">fadeOut</span><span style="color:#FF7B72"> in</span><span style="color:#E6EDF3">:</span><span style="color:#FFA657">fadeIn</span><span style="color:#E6EDF3">>I am visible&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">{/</span><span style="color:#FF7B72">if</span><span style="color:#E6EDF3">}</span>
+
 
 
 

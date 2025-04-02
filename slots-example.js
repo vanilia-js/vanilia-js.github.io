@@ -61,6 +61,7 @@ $(c => {
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
 
+
 </code></pre>
 </code-block>
 
@@ -82,6 +83,7 @@ $(c => {
 <span style="color:#E6EDF3">}</span>
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -98,6 +100,7 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">strong</span><span style="color:#E6EDF3">>Clicks:&#x3C;/</span><span style="color:#7EE787">strong</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;/</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 
 </code></pre>
 </code-block>
@@ -120,6 +123,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 
 
+
 </code></pre>
 </code-block>
     ` : ''}
@@ -134,6 +138,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">strong</span><span style="color:#E6EDF3">>Clicks:&#x3C;/</span><span style="color:#7EE787">strong</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3">></span>
+
 
 
 
@@ -152,6 +157,7 @@ $(c => {
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">span</span><span style="color:#79C0FF"> class</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"label"</span><span style="color:#E6EDF3">>{@</span><span style="color:#FF7B72">render</span><span style="color:#D2A8FF"> children</span><span style="color:#E6EDF3">()}&#x3C;/</span><span style="color:#7EE787">span</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">span</span><span style="color:#79C0FF"> class</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"counterValue"</span><span style="color:#E6EDF3">></span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">span</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
+
 
 
 

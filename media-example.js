@@ -30,6 +30,8 @@ $(c => {
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
 
+
+
 </code></pre>
 </code-block>
 
@@ -81,7 +83,8 @@ $(c => {
 <span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">VideoControls</span><span style="color:#79C0FF"> videoRef</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">videoRef</span><span style="color:#FF7B72">}</span><span style="color:#79C0FF"> currentTime</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">currentTime</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3"> /></span>
 <span style="color:#E6EDF3">    &#x3C;/></span>
 <span style="color:#E6EDF3">  )</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span>
+</code></pre>
 </code-block>
 
 <code-file>VideoControls.jsx</code-file>
@@ -104,6 +107,7 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;/></span>
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
+
 
 
 
@@ -132,6 +136,7 @@ $(c => {
 <span style="color:#E6EDF3">  >&#x3C;/</span><span style="color:#7EE787">video</span><span style="color:#E6EDF3">>&#x3C;</span><span style="color:#7EE787">br</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">VideoControls</span><span style="color:#E6EDF3"> :</span><span style="color:#79C0FF">videoRef</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">videoRef</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3"> :</span><span style="color:#79C0FF">currentTime</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">currentTime</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3"> /></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 </code></pre>
 </code-block>
 
@@ -155,6 +160,7 @@ $(c => {
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3"> @</span><span style="color:#79C0FF">click</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">togglePlay</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">>{{ isPlaying </span><span style="color:#FF7B72">?</span><span style="color:#A5D6FF"> "Pause"</span><span style="color:#FF7B72"> :</span><span style="color:#A5D6FF"> "Play"</span><span style="color:#E6EDF3"> }}&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">span</span><span style="color:#79C0FF"> class</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"current-time"</span><span style="color:#E6EDF3">>{{ Math.</span><span style="color:#D2A8FF">floor</span><span style="color:#E6EDF3">(currentTime) }}s&#x3C;/</span><span style="color:#7EE787">span</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
+
 
 
 
@@ -183,6 +189,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
 
@@ -202,6 +209,7 @@ $(c => {
 
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> onclick</span><span style="color:#E6EDF3">=</span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">togglePlay</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">></span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">isPlaying </span><span style="color:#FF7B72">?</span><span style="color:#A5D6FF"> 'Pause'</span><span style="color:#FF7B72"> :</span><span style="color:#A5D6FF"> 'Play'</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">span</span><span style="color:#79C0FF"> class</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"current-time"</span><span style="color:#E6EDF3">></span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">Math.</span><span style="color:#D2A8FF">floor</span><span style="color:#E6EDF3">(currentTime)</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">s&#x3C;/</span><span style="color:#7EE787">span</span><span style="color:#E6EDF3">></span>
+
 
 
 

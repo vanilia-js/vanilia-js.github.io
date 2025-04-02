@@ -33,6 +33,7 @@ $(c => {
 <span style="color:#A5D6FF">  &#96;</span>
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
+
 </code></pre>
 </code-block>
 
@@ -55,6 +56,7 @@ $(c => {
 <span style="color:#E6EDF3">  }</span>
 <span style="color:#D2A8FF">  isLoading</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">}</span>
+
 
 
 
@@ -199,6 +201,7 @@ $(c => {
 
 
 
+
 </code></pre>
 </code-block>
 
@@ -223,6 +226,7 @@ $(c => {
 <span style="color:#E6EDF3">  }</span>
 <span style="color:#E6EDF3">  store.isLoading </span><span style="color:#FF7B72">=</span><span style="color:#79C0FF"> false</span>
 <span style="color:#E6EDF3">}</span>
+
 
 
 
