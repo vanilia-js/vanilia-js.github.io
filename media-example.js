@@ -13,7 +13,7 @@ $(c => {
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>media-example.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'media-example'</span>
+<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'media-example'</span>
 
 <span style="color:#FF7B72">import</span><span style="color:#A5D6FF"> './video-controls.js'</span>
 
@@ -32,12 +32,12 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>video-controls.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'video-controls'</span>
+<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'video-controls'</span>
 
 <span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { video, currentTime } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './media-example.js'</span>
 
@@ -58,14 +58,14 @@ $(c => {
 <span style="color:#FF7B72">    if</span><span style="color:#E6EDF3"> (e.target.classList.</span><span style="color:#D2A8FF">contains</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'pause'</span><span style="color:#E6EDF3">)) </span><span style="color:#D2A8FF">video</span><span style="color:#E6EDF3">().</span><span style="color:#D2A8FF">pause</span><span style="color:#E6EDF3">()</span>
 <span style="color:#D2A8FF">    isPlaying</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">!</span><span style="color:#D2A8FF">isPlaying</span><span style="color:#E6EDF3">())</span>
 <span style="color:#E6EDF3">  }</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></pre>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
 </code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>MediaExample.jsx</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState, useRef } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState, useRef } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> MediaExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> videoRef</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> useRef</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">null</span><span style="color:#E6EDF3">)</span>
@@ -84,12 +84,12 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;/></span>
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
-</code></pre>
+</code>
 </code-block>
 
 <code-file>VideoControls.jsx</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 
 <span style="color:#FF7B72">function</span><span style="color:#D2A8FF"> VideoControls</span><span style="color:#E6EDF3">({ </span><span style="color:#FFA657">videoRef</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">currentTime</span><span style="color:#E6EDF3"> }) {</span>
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> [</span><span style="color:#79C0FF">isPlaying</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">setIsPlaying</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> useState</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">)</span>
@@ -111,14 +111,14 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>MediaExample.vue</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> VideoControls </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './VideoControls.vue'</span>
 
@@ -137,12 +137,12 @@ $(c => {
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">VideoControls</span><span style="color:#E6EDF3"> :</span><span style="color:#79C0FF">videoRef</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">videoRef</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3"> :</span><span style="color:#79C0FF">currentTime</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">currentTime</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3"> /></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>VideoControls.vue</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> { </span><span style="color:#79C0FF">videoRef</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">currentTime</span><span style="color:#E6EDF3"> } </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> defineProps</span><span style="color:#E6EDF3">([</span><span style="color:#A5D6FF">'videoRef'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'currentTime'</span><span style="color:#E6EDF3">])</span>
@@ -164,14 +164,14 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>MediaExample.svelte</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> VideoControls </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './VideoControls.svelte'</span>
 
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> videoRef </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">null</span><span style="color:#E6EDF3">)</span>
@@ -190,12 +190,12 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>VideoControls.svelte</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> { videoRef, currentTime } </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">props</span><span style="color:#E6EDF3">()</span>
 
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> isPlaying </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">);</span>
@@ -217,7 +217,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
   `

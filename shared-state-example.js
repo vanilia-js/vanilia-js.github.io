@@ -36,7 +36,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>counter-btn.js</code-file>
@@ -53,7 +53,7 @@ $(c => {
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">onclick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> counter</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">counter</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
@@ -80,7 +80,7 @@ $(c => {
 <span style="color:#E6EDF3">      &#x3C;</span><span style="color:#7EE787">CounterBtn</span><span style="color:#E6EDF3"> /></span>
 <span style="color:#E6EDF3">    &#x3C;/</span><span style="color:#7EE787">SharedContext.Provider</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  )</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span></code>
 </code-block>
 
 <code-file>CounterBtn.jsx</code-file>
@@ -96,7 +96,7 @@ $(c => {
 <span style="color:#E6EDF3">      Clicks: </span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">counter</span><span style="color:#FF7B72">}</span>
 <span style="color:#E6EDF3">    &#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  )</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span></code>
 </code-block>
     ` : ''}
 
@@ -107,7 +107,7 @@ $(c => {
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> shared</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> reactive</span><span style="color:#E6EDF3">({</span>
 <span style="color:#E6EDF3">  counter: </span><span style="color:#79C0FF">0</span>
-<span style="color:#E6EDF3">})</span></code></pre>
+<span style="color:#E6EDF3">})</span></code>
 </code-block>
 
 <code-file>SharedStateExample.vue</code-file>
@@ -123,7 +123,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 
 
-</code></pre>
+</code>
 </code-block>
 
 
@@ -142,7 +142,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
@@ -154,7 +154,7 @@ $(c => {
 <span style="color:#E6EDF3">})</span>
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>SharedStateExample.svelte</code-file>
@@ -170,7 +170,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>CounterBtn.svelte</code-file>
@@ -187,7 +187,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
   `

@@ -16,8 +16,8 @@ $(c => {
     </div>
 
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
-<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 1</span></div></code></pre>
+<code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
+<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 1</span></div></code>
 </code-block>
     
     <div>
@@ -25,9 +25,9 @@ $(c => {
     </div>
 
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
+<code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
 <span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">2</span><span style="color:#E6EDF3">)                        </span><span style="color:#8B949E">// set count() to 2</span>
-<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 2</span></div></code></pre>
+<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 2</span></div></code>
 </code-block>
 
     <div>
@@ -35,9 +35,9 @@ $(c => {
     </div>
 
 <code-block>
-<pre><code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
+<code><div class="line"><span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
 <span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)              </span><span style="color:#8B949E">// set count() to 2: current value plus 1</span>
-<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 2</span></div></code></pre>
+<span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()                         </span><span style="color:#8B949E">// get 2</span></div></code>
 </code-block>
 
     <div>
@@ -45,7 +45,7 @@ $(c => {
     </div>
 
 <code-block>
-<pre><code><span class="line-hidden"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> let</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">value</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">tag</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">effects</span><span style="color:#FF7B72"> =</span><span style="color:#FF7B72"> new</span><span style="color:#D2A8FF"> Set</span><span style="color:#E6EDF3">(), </span><span style="color:#FFA657">range</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> document.</span><span style="color:#D2A8FF">createRange</span><span style="color:#E6EDF3">()) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
+<code><span class="line-hidden"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> let</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">value</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">tag</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">effects</span><span style="color:#FF7B72"> =</span><span style="color:#FF7B72"> new</span><span style="color:#D2A8FF"> Set</span><span style="color:#E6EDF3">(), </span><span style="color:#FFA657">range</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> document.</span><span style="color:#D2A8FF">createRange</span><span style="color:#E6EDF3">()) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FF7B72">  let</span><span style="color:#D2A8FF"> reload</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">ctx</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">strs</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">vals</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> ctx.</span><span style="color:#D2A8FF">replaceChildren</span><span style="color:#E6EDF3">(range.</span><span style="color:#D2A8FF">createContextualFragment</span><span style="color:#E6EDF3">(</span>
 <span style="color:#E6EDF3">        strs.</span><span style="color:#D2A8FF">map</span><span style="color:#E6EDF3">((</span><span style="color:#FFA657">str</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">i</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> str </span><span style="color:#FF7B72">+</span><span style="color:#E6EDF3"> (vals[i] </span><span style="color:#FF7B72">??</span><span style="color:#A5D6FF"> ''</span><span style="color:#E6EDF3">)).</span><span style="color:#D2A8FF">join</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">''</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">      )),</span>
@@ -66,7 +66,7 @@ $(c => {
 <span style="color:#8B949E">    // if value is defined run side-effects in queue and return new value as current value</span>
 <span style="color:#E6EDF3">    (</span><span style="color:#D2A8FF">queueMicrotask</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> effects.</span><span style="color:#D2A8FF">forEach</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">&#36;</span><span style="color:#FF7B72"> =></span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">())), value </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> newValue)</span>
 <span class="line-hidden"><span style="color:#E6EDF3">}</span>
-<span style="color:#E6EDF3">window[</span><span style="color:#A5D6FF">'&#36;'</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span></span></code></pre>
+<span style="color:#E6EDF3">window[</span><span style="color:#A5D6FF">'&#36;'</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span></span></code>
 </code-block>
   `
 },c)

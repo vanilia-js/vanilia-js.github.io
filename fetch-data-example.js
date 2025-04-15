@@ -13,7 +13,7 @@ $(c => {
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>fetch-data-example.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'fetch-data-example'</span>
+<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'fetch-data-example'</span>
 
 <span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { isLoading, error, data </span><span style="color:#FF7B72">as</span><span style="color:#E6EDF3"> users, fetchData } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetch-data.js'</span>
 
@@ -34,12 +34,12 @@ $(c => {
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>fetch-data.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> data</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">()</span>
+<code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> data</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">()</span>
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> error</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">()</span>
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> isLoading</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">)</span>
 
@@ -63,14 +63,14 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>FetchDataExample.jsx</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> fetchData </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetchData.jsx'</span>
+<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> fetchData </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetchData.jsx'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> FetchDataExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> { </span><span style="color:#79C0FF">isLoading</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">error</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">data</span><span style="color:#E6EDF3">: </span><span style="color:#79C0FF">users</span><span style="color:#E6EDF3"> } </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'https://randomuser.me/api/?results=3'</span><span style="color:#E6EDF3">)</span>
@@ -90,12 +90,12 @@ $(c => {
 <span style="color:#E6EDF3">      )</span><span style="color:#FF7B72">}</span>
 <span style="color:#E6EDF3">    &#x3C;/></span>
 <span style="color:#E6EDF3">  )</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span></code>
 </code-block>
 
 <code-file>fetchData.jsx</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useEffect, useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useEffect, useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#FFA657">(url) </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> [</span><span style="color:#79C0FF">data</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">setData</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> useState</span><span style="color:#E6EDF3">()</span>
@@ -118,14 +118,14 @@ $(c => {
 <span style="color:#E6EDF3">  </span>
 <span style="color:#D2A8FF">  useEffect</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> fetchData</span><span style="color:#E6EDF3">(), [])</span>
 <span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> { isLoading, error, data }</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span></code>
 </code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>FetchDataExample.vue</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> fetchData </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetchData.js'</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> { </span><span style="color:#79C0FF">isLoading</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">error</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">data</span><span style="color:#E6EDF3">: </span><span style="color:#79C0FF">users</span><span style="color:#E6EDF3"> } </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'https://randomuser.me/api/?results=3'</span><span style="color:#E6EDF3">)</span>
@@ -146,12 +146,12 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>fetchData.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
+<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> fetchData</span><span style="color:#FFA657">(url) </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> data</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> ref</span><span style="color:#E6EDF3">()</span>
@@ -174,14 +174,14 @@ $(c => {
 
 <span style="color:#D2A8FF">  fetchData</span><span style="color:#E6EDF3">()</span>
 <span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> { isLoading, error, data }</span>
-<span style="color:#E6EDF3">}</span></code></pre>
+<span style="color:#E6EDF3">}</span></code>
 </code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>FetchDataExample.svelte</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { store, fetchData } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './fetchData.svelte.js'</span>
 
 <span style="color:#D2A8FF">  fetchData</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'https://randomuser.me/api/?results=3'</span><span style="color:#E6EDF3">)</span>
@@ -202,12 +202,12 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
 
 <code-file>fetchData.svelte.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> store</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;state</span><span style="color:#E6EDF3">({</span>
+<code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> const</span><span style="color:#79C0FF"> store</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> &#36;state</span><span style="color:#E6EDF3">({</span>
 <span style="color:#E6EDF3">  data: [],</span>
 <span style="color:#E6EDF3">  isLoading: </span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">,</span>
 <span style="color:#E6EDF3">  error: </span><span style="color:#79C0FF">null</span>
@@ -231,7 +231,7 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
   `

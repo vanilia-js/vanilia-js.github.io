@@ -13,7 +13,7 @@ $(c => {
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>conditionals-example.js</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'conditionals-example'</span>
+<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'conditionals-example'</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> color</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'orange'</span>
@@ -33,14 +33,14 @@ $(c => {
 <span style="color:#A5D6FF">      'Maybe orange'</span>
 <span style="color:#E6EDF3">    }&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
 <span style="color:#A5D6FF">  &#96;</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></pre>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
 </code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>ConditionalsExample.jsx</code-file>
 <code-block>
-<pre><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> ConditionalsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
+<code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> ConditionalsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> color</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'orange'</span>
 
 <span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> (</span>
@@ -61,14 +61,14 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;/></span>
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>ConditionalsExample.vue</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> color</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'orange'</span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 
@@ -89,14 +89,14 @@ $(c => {
 
 
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>ConditionalsExample.svelte</code-file>
 <code-block>
-<pre><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> color</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'orange'</span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 
@@ -117,7 +117,7 @@ $(c => {
 <span style="color:#A5D6FF">  'Maybe orange'</span>
 <span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
 
-</code></pre>
+</code>
 </code-block>
     ` : ''}    
   `

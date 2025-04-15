@@ -164,6 +164,10 @@ h4 { font: var(--font-light) var(--font-size-4)/var(--line-height-4) var(--font-
 h5 { font: var(--font-light) var(--font-size-5)/var(--line-height-5) var(--font-family-headings); margin-bottom: var(--font-size-5) }
 h6 { font: var(--font-light) var(--font-size-6)/var(--line-height-6) var(--font-family-headings); margin-bottom: var(--font-size-6) }
 
+text {
+  font-family: inherit;
+}
+
 /* utility */
 
 .mask {
@@ -189,11 +193,8 @@ h6 { font: var(--font-light) var(--font-size-6)/var(--line-height-6) var(--font-
   opacity: 0.2;
 }
 
-code-block  {
+code-block {
   display: block;
-  border: 1px solid #6666;
-  padding: var(--font-size-4);
-  overflow-x: hidden;
 }
 
 code-file {
@@ -203,6 +204,15 @@ code-file {
   border-bottom: #E6EDF3 1px solid;
   background: var(--color-background);
   font-weight: var(--font-medium);
+}
+
+code {
+  display: block;
+  border: 1px solid #6666;
+  padding: var(--font-size-4);
+  white-space: pre;
+  overflow-x: auto;
+  touch-action: pan-y;
 }
 
 main > * {
