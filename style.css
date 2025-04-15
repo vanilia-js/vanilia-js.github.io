@@ -189,17 +189,11 @@ h6 { font: var(--font-light) var(--font-size-6)/var(--line-height-6) var(--font-
   opacity: 0.2;
 }
 
-code-block {
-  display: block;
-}
-
-code-block pre {
+code-block  {
   display: block;
   border: 1px solid #6666;
   padding: var(--font-size-4);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
+  overflow-x: hidden;
 }
 
 code-file {
