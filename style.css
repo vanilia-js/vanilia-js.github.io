@@ -211,7 +211,7 @@ code {
   border: 1px solid #6666;
   padding: var(--font-size-4);
   white-space: pre;
-  overflow-x: auto;
+  overflow-x: hidden;
   touch-action: pan-y;
 }
 
