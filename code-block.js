@@ -1,10 +1,10 @@
 const c = 'code-block'
 
-let x = 0, y = 0
-let vx = 0, vy = 0
-const easingFactor = 0.1
-
 $(c => {
+  let x = 0, y = 0
+  let vx = 0, vy = 0
+  const easingFactor = 0.1
+
   c.addEventListener('touchstart', e => {
     const { clientX, clientY } = e.touches[0]
     x = clientX
@@ -34,5 +34,8 @@ $(c => {
       requestAnimationFrame(momentum)
     }
     momentum()
+
+    x = y = 0
+    vx = vy = 0
   })
-}, c)
+},c)
