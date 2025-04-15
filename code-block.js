@@ -1,8 +1,7 @@
 const c = 'code-block'
 
-let x = 0, y = 0
-let vx = 0, vy = 0
-const easingFactor = 0.05
+let x = 0, dx = 0, vx = 0
+let y = 0, dy = 0, vy = 0
 
 $(c => {
   c.addEventListener('touchstart', e => {
@@ -13,26 +12,16 @@ $(c => {
 
   c.addEventListener('touchmove', e => {
     const { clientX, clientY } = e.touches[0]
-    vx *= (1 - easingFactor)
-    vy *= (1 - easingFactor)
-    Math.abs(clientY - y) > Math.abs(clientX - x) ? vy = clientY - y : vx = clientX - x
-    vx && (c.scrollLeft -= vx)
-    vy && window.scrollBy(0, -vy)
-
+    dx = clientX - x
+    dy = clientY - y
     x = clientX
     y = clientY
-  }, { passive: false })
 
-  c.addEventListener('touchend', () => {
-    const momentum = () => {
-      vx *= (1 - easingFactor)
-      vy *= (1 - easingFactor)
-      if (Math.abs(vx) < 0.1 && Math.abs(vy) < 0.1) return
-      vx && (c.scrollLeft -= vx)
+    queueMicrotask(() => {
+      Math.abs(dy) > Math.abs(dx) ? vy = dy : vx = dx
       vy && window.scrollBy(0, -vy)
-      
-      requestAnimationFrame(momentum)
-    }
-    momentum()
-  })
+      vx && (c.scrollLeft -= vx)
+      vy = vx = 0
+    })
+  }, { passive: false })
 }, c)
