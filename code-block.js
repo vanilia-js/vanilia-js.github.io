@@ -1,27 +1,33 @@
 const c = 'code-block'
-
-let x = 0, dx = 0, vx = 0
-let y = 0, dy = 0, vy = 0
+let x = 0, y = 0, vx = 0, vy = 0, frame
 
 $(c => {
-  c.addEventListener('touchstart', e => {
-    const { clientX, clientY } = e.touches[0]
-    x = clientX
-    y = clientY
-  }, { passive: true })
+  c.ontouchstart = e => {
+    const t = e.touches[0]
+    x = t.clientX
+    y = t.clientY
+    cancelAnimationFrame(frame)
+  }
 
-  c.addEventListener('touchmove', e => {
-    const { clientX, clientY } = e.touches[0]
-    dx = clientX - x
-    dy = clientY - y
-    x = clientX
-    y = clientY
+  c.ontouchmove = e => {
+    const t = e.touches[0]
+    vx = t.clientX - x
+    vy = t.clientY - y
+    x = t.clientX
+    y = t.clientY
 
-    queueMicrotask(() => {
-      Math.abs(dy) > Math.abs(dx) ? vy = dy : vx = dx
+    Math.abs(vy) > Math.abs(vx) ? window.scrollBy(0, -vy) : c.scrollLeft -= vx
+  }
+
+  c.ontouchend = () => {
+    const momentum = () => {
+      vx *= 0.96
+      vy *= 0.96
+      if (Math.abs(vx) < 0.6 && Math.abs(vy) < 0.6) return
       vy && window.scrollBy(0, -vy)
       vx && (c.scrollLeft -= vx)
-      vy = vx = 0
-    })
-  }, { passive: false })
+      frame = requestAnimationFrame(momentum)
+    }
+    momentum()
+  }
 },c)
