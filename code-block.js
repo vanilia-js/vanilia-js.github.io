@@ -1,33 +1,38 @@
 const c = 'code-block'
-let x = 0, y = 0, vx = 0, vy = 0, frame
+
+let x = 0, y = 0
+let vx = 0, vy = 0
+const easingFactor = 0.05
 
 $(c => {
-  c.ontouchstart = e => {
-    const t = e.touches[0]
-    x = t.clientX
-    y = t.clientY
-    cancelAnimationFrame(frame)
-  }
+  c.addEventListener('touchstart', e => {
+    const { clientX, clientY } = e.touches[0]
+    x = clientX
+    y = clientY
+  }, { passive: true })
 
-  c.ontouchmove = e => {
-    const t = e.touches[0]
-    vx = t.clientX - x
-    vy = t.clientY - y
-    x = t.clientX
-    y = t.clientY
+  c.addEventListener('touchmove', e => {
+    const { clientX, clientY } = e.touches[0]
+    vx *= (1 - easingFactor)
+    vy *= (1 - easingFactor)
+    Math.abs(clientY - y) > Math.abs(clientX - x) ? vy = clientY - y : vx = clientX - x
+    vx && (c.scrollLeft -= vx)
+    vy && window.scrollBy(0, -vy)
 
-    Math.abs(vy) > Math.abs(vx) ? window.scrollBy(0, -vy) : c.scrollLeft -= vx
-  }
+    x = clientX
+    y = clientY
+  }, { passive: false })
 
-  c.ontouchend = () => {
+  c.addEventListener('touchend', () => {
     const momentum = () => {
-      vx *= 0.96
-      vy *= 0.96
-      if (Math.abs(vx) < 0.6 && Math.abs(vy) < 0.6) return
-      vy && window.scrollBy(0, -vy)
+      vx *= (1 - easingFactor)
+      vy *= (1 - easingFactor)
+      if (Math.abs(vx) < 0.1 && Math.abs(vy) < 0.1) return
       vx && (c.scrollLeft -= vx)
-      frame = requestAnimationFrame(momentum)
+      vy && window.scrollBy(0, -vy)
+      
+      requestAnimationFrame(momentum)
     }
     momentum()
-  }
-},c)
+  })
+}, c)
