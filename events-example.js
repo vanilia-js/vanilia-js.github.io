@@ -12,8 +12,7 @@ $(c => {
 
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>events-example.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'events-example'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'events-example'</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span>
@@ -40,14 +39,12 @@ $(c => {
 <span style="color:#E6EDF3">      console.</span><span style="color:#D2A8FF">log</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">&#96;Mouse position: X=&#36;{</span><span style="color:#E6EDF3">e</span><span style="color:#A5D6FF">.</span><span style="color:#E6EDF3">clientX</span><span style="color:#A5D6FF">}, Y=&#36;{</span><span style="color:#E6EDF3">e</span><span style="color:#A5D6FF">.</span><span style="color:#E6EDF3">clientY</span><span style="color:#A5D6FF">}&#96;</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">    }</span>
 <span style="color:#E6EDF3">  }</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>EventsExample.jsx</code-file>
-<code-block>
-<code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> EventsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> EventsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#D2A8FF"> handleClick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#D2A8FF">    alert</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'Clicked!'</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">  }</span>
@@ -75,14 +72,12 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>EventsExample.vue</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#D2A8FF"> handleClick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#D2A8FF">    alert</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'Clicked!'</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">  }</span>
@@ -110,14 +105,12 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>EventsExample.svelte</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#D2A8FF"> handleClick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#D2A8FF">    alert</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'Clicked!'</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">  }</span>
@@ -145,8 +138,7 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
   `
 },c)

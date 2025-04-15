@@ -12,8 +12,7 @@ $(c => {
 
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>loops-example.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'loops-example'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'loops-example'</span>
 
 <span style="color:#D2A8FF">$</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsRGB</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span><span style="color:#A5D6FF">'red'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'green'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'blue'</span><span style="color:#E6EDF3">]</span>
@@ -34,14 +33,12 @@ $(c => {
 <span style="color:#A5D6FF">      &#96;</span><span style="">).</span><span style="color:#D2A8FF">join</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">''</span><span style="color:#E6EDF3">)</span><span style="color:#E6EDF3">}</span>
 <span style="color:#E6EDF3">    &#x3C;/</span><span style="color:#7EE787">ul</span><span style="color:#E6EDF3">></span>
 <span style="color:#A5D6FF">  &#96;</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>LoopsExample.jsx</code-file>
-<code-block>
-<code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LoopsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LoopsExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsRGB</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span><span style="color:#A5D6FF">'red'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'green'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'blue'</span><span style="color:#E6EDF3">]</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsCMY</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span>
 <span style="color:#E6EDF3">    { colour: </span><span style="color:#A5D6FF">'cyan'</span><span style="color:#E6EDF3"> }, </span>
@@ -63,14 +60,12 @@ $(c => {
 <span style="color:#E6EDF3">}</span>
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>LoopsExample.vue</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsRGB</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span><span style="color:#A5D6FF">'red'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'green'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'blue'</span><span style="color:#E6EDF3">]</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsCMY</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span>
 <span style="color:#E6EDF3">    { colour: </span><span style="color:#A5D6FF">'cyan'</span><span style="color:#E6EDF3"> }, </span>
@@ -92,14 +87,12 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>LoopsExample.svelte</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsRGB</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span><span style="color:#A5D6FF">'red'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'green'</span><span style="color:#E6EDF3">, </span><span style="color:#A5D6FF">'blue'</span><span style="color:#E6EDF3">]</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> colorsCMY</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> [</span>
 <span style="color:#E6EDF3">    { colour: </span><span style="color:#A5D6FF">'cyan'</span><span style="color:#E6EDF3"> }, </span>
@@ -121,8 +114,7 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
   `
 },c)

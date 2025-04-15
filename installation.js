@@ -15,8 +15,7 @@ $(c => {
     </div>
 
 <code-file>index.html</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;!</span><span style="color:#7EE787">DOCTYPE</span><span style="color:#79C0FF"> html</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;!</span><span style="color:#7EE787">DOCTYPE</span><span style="color:#79C0FF"> html</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">html</span><span style="color:#79C0FF"> lang</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"en"</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">body</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">>0&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
@@ -29,8 +28,7 @@ $(c => {
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">  document.</span><span style="color:#D2A8FF">querySelector</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'button'</span><span style="color:#E6EDF3">).</span><span style="color:#D2A8FF">addEventListener</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'click'</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">e</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> e.target.textContent </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> count</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">))</span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
-<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">html</span><span style="color:#E6EDF3">></span></code>
-</code-block>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">html</span><span style="color:#E6EDF3">></span></code></code-block>
 
     <div>
       <p>If you need a live preview, you may need to install a plugin for your editor. Look for "development local server" or if you use VSCode, you can try this one: <span class="underline"><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></span>.</p>
@@ -42,8 +40,7 @@ $(c => {
     </div>
 
 <code-file>index.html</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;!</span><span style="color:#7EE787">DOCTYPE</span><span style="color:#79C0FF"> html</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;!</span><span style="color:#7EE787">DOCTYPE</span><span style="color:#79C0FF"> html</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">html</span><span style="color:#79C0FF"> lang</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"en"</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">head</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> type</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"module"</span><span style="color:#E6EDF3">></span>
@@ -73,8 +70,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">body</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">sample-counter</span><span style="color:#E6EDF3">>&#x3C;/</span><span style="color:#7EE787">sample-counter</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">body</span><span style="color:#E6EDF3">></span>
-<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">html</span><span style="color:#E6EDF3">></span></code>
-</code-block>
+<span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">html</span><span style="color:#E6EDF3">></span></code></code-block>
 
     <div>    
       <p>At the bottom we import component <strong>&lt;sample-counter&gt;</strong> that do not exists yet: <strong>&lt;script type="module" src="./sample-counter"&gt;</strong></p>
@@ -83,8 +79,7 @@ $(c => {
     </div>
 
 <code-file>sample-counter.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span>
 
 <span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">)</span>
 
@@ -99,8 +94,7 @@ $(c => {
 <span style="color:#E6EDF3">    e.target.classList.</span><span style="color:#D2A8FF">contains</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'decrement'</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">&#x26;&#x26;</span><span style="color:#D2A8FF"> count</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">-</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">    e.target.classList.</span><span style="color:#D2A8FF">contains</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">'increment'</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">&#x26;&#x26;</span><span style="color:#D2A8FF"> count</span><span style="color:#E6EDF3">(</span><span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">() </span><span style="color:#FF7B72">+</span><span style="color:#79C0FF"> 1</span><span style="color:#E6EDF3">)</span>
 <span style="color:#E6EDF3">  }</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></code-block>
 
     <div>
       <p>If your HTML is not highlighted, you may need to install a plugin for your editor. Look for "tagged template literals" or if you use VSCode, you can try this one: <span class="underline"><a href="https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html">es6-string-html</a></span>.</p>

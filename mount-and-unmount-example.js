@@ -12,8 +12,7 @@ $(c => {
 
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>mount-and-unmount-example.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'mount-and-unmount-example'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'mount-and-unmount-example'</span>
 
 <span style="color:#FF7B72">import</span><span style="color:#A5D6FF"> './local-time.js'</span>
 
@@ -26,12 +25,10 @@ $(c => {
 <span style="color:#A5D6FF">  &#96;</span>
 
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">onclick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#D2A8FF"> show</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">!</span><span style="color:#D2A8FF">show</span><span style="color:#E6EDF3">())</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></code-block>
 
 <code-file>local-time.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'local-time'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'local-time'</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> time </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">new</span><span style="color:#D2A8FF"> Date</span><span style="color:#E6EDF3">().</span><span style="color:#D2A8FF">toLocaleTimeString</span><span style="color:#E6EDF3">())</span>
@@ -48,14 +45,12 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>MountAndUnmountExample.jsx</code-file>
-<code-block>
-<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 <span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> LocalTime </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './LocalTime.jsx'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> MountAndUnmountExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
@@ -69,12 +64,10 @@ $(c => {
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
 
-</code>
-</code-block>
+</code></code-block>
 
 <code-file>LocalTime.jsx</code-file>
-<code-block>
-<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState, useEffect } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useState, useEffect } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> LocalTime</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#E6EDF3"> [</span><span style="color:#79C0FF">time</span><span style="color:#E6EDF3">, </span><span style="color:#79C0FF">setTime</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> useState</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">new</span><span style="color:#D2A8FF"> Date</span><span style="color:#E6EDF3">().</span><span style="color:#D2A8FF">toLocaleTimeString</span><span style="color:#E6EDF3">())</span>
@@ -90,14 +83,12 @@ $(c => {
 <span style="color:#E6EDF3">  }, [])</span>
 
 <span style="color:#FF7B72">  return</span><span style="color:#E6EDF3"> &#x3C;</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span><span style="color:#FF7B72">{</span><span style="color:#E6EDF3">time</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
-<span style="color:#E6EDF3">}</span></code>
-</code-block>
+<span style="color:#E6EDF3">}</span></code></code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>MountAndUnmountExample.vue</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> LocalTime </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './LocalTime.vue'</span>
 
@@ -111,12 +102,10 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
 
 <code-file>LocalTime.vue</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref, onUnmounted } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> time</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> ref</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">new</span><span style="color:#D2A8FF"> Date</span><span style="color:#E6EDF3">().</span><span style="color:#D2A8FF">toLocaleTimeString</span><span style="color:#E6EDF3">())</span>
@@ -133,14 +122,12 @@ $(c => {
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">>{{ time }}&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>MountAndUnmountExample.svelte</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> LocalTime </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> './LocalTime.svelte'</span>
 
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> show </span><span style="color:#FF7B72">=</span><span style="color:#79C0FF"> false</span>
@@ -154,12 +141,10 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
 
 <code-file>LocalTime.svelte</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> time </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#FF7B72">new</span><span style="color:#D2A8FF"> Date</span><span style="color:#E6EDF3">().</span><span style="color:#D2A8FF">toLocaleTimeString</span><span style="color:#E6EDF3">())</span>
 
 <span style="color:#E6EDF3">  &#36;</span><span style="color:#D2A8FF">effect</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
@@ -176,8 +161,7 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
   `
 },c)

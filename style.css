@@ -75,7 +75,7 @@
 }
 ::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 1px;
 }
 ::-webkit-scrollbar-track {
   background: var(--color-background);
@@ -195,6 +195,12 @@ text {
 
 code-block {
   display: block;
+  border: 1px solid #6666;
+  padding: var(--font-size-4);
+  white-space: pre;
+  overflow-x: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
 }
 
 code-file {
@@ -207,12 +213,7 @@ code-file {
 }
 
 code {
-  display: block;
-  border: 1px solid #6666;
-  padding: var(--font-size-4);
-  white-space: pre;
-  overflow-x: hidden;
-  touch-action: pan-y;
+
 }
 
 main > * {

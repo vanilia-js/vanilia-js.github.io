@@ -30,34 +30,29 @@ $(c => {
       </ul>
     </div>
 
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span><span style="color:#8B949E">      // define component name</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span><span style="color:#8B949E">      // define component name</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {                        </span><span style="color:#8B949E">// get component as argument</span>
 <span style="color:#E6EDF3">  console.</span><span style="color:#D2A8FF">log</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// log this component</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>                            <span style="color:#8B949E">// pass name required to create component</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>                            <span style="color:#8B949E">// pass name required to create component</span></code></code-block>
 
     <div>
       <p>The component has an additional method (tagged template literal) <strong>html''</strong> that you can use to create a template (ContextualFragment):</p>
     </div>
 
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span><span style="color:#8B949E">      // define component name</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span><span style="color:#8B949E">      // define component name</span>
 
 <span style="color:#FF7B72">let</span><span style="color:#E6EDF3"> count </span><span style="color:#FF7B72">=</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">)                </span><span style="color:#8B949E">// create signal count() with value of 1</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {                        </span><span style="color:#8B949E">// get component as argument</span>
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">>&#36;{</span><span style="color:#D2A8FF">count</span><span style="color:#E6EDF3">()}&#x3C;/</span><span style="color:#7EE787">p</span><span style="color:#E6EDF3">></span><span style="color:#A5D6FF">&#96;</span><span style="color:#8B949E">     // create paragraph and display value of count() inside it</span>
-<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code>
-</code-block>
+<span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span></code></code-block>
 
     <div>
       <p>Take a look at how it works under the hood:</p>
     </div>
 
-<code-block>
-<code><span class="line-hidden"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> let</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">value</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">tag</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">effects</span><span style="color:#FF7B72"> =</span><span style="color:#FF7B72"> new</span><span style="color:#D2A8FF"> Set</span><span style="color:#E6EDF3">(), </span><span style="color:#FFA657">range</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> document.</span><span style="color:#D2A8FF">createRange</span><span style="color:#E6EDF3">()) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span></span>
+<code-block tabindex="0"><code><span class="line-hidden"><span style="color:#FF7B72">export</span><span style="color:#FF7B72"> let</span><span style="color:#D2A8FF"> &#36;</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">value</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">tag</span><span style="color:#FF7B72"> =</span><span style="color:#79C0FF"> undefined</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">effects</span><span style="color:#FF7B72"> =</span><span style="color:#FF7B72"> new</span><span style="color:#D2A8FF"> Set</span><span style="color:#E6EDF3">(), </span><span style="color:#FFA657">range</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> document.</span><span style="color:#D2A8FF">createRange</span><span style="color:#E6EDF3">()) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span></span>
 <span style="color:#8B949E">      // create template for component using tagged template literal</span>
 <span style="color:#FF7B72">  let</span><span style="color:#D2A8FF"> reload</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> (</span><span style="color:#FFA657">ctx</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">strs</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">vals</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> ctx.</span><span style="color:#D2A8FF">replaceChildren</span><span style="color:#E6EDF3">(range.</span><span style="color:#D2A8FF">createContextualFragment</span><span style="color:#E6EDF3">(</span>
 <span style="color:#E6EDF3">        strs.</span><span style="color:#D2A8FF">map</span><span style="color:#E6EDF3">((</span><span style="color:#FFA657">str</span><span style="color:#E6EDF3">, </span><span style="color:#FFA657">i</span><span style="color:#E6EDF3">) </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> str </span><span style="color:#FF7B72">+</span><span style="color:#E6EDF3"> (vals[i] </span><span style="color:#FF7B72">??</span><span style="color:#A5D6FF"> ''</span><span style="color:#E6EDF3">)).</span><span style="color:#D2A8FF">join</span><span style="color:#E6EDF3">(</span><span style="color:#A5D6FF">''</span><span style="color:#E6EDF3">)</span>
@@ -81,7 +76,6 @@ $(c => {
 <span style="color:#E6EDF3">    (&#36; </span><span style="color:#FF7B72">&#x26;&#x26;</span><span style="color:#E6EDF3"> effects.</span><span style="color:#D2A8FF">add</span><span style="color:#E6EDF3">(&#36;), value) </span><span style="color:#FF7B72">:</span>
 <span style="color:#E6EDF3">    (</span><span style="color:#D2A8FF">queueMicrotask</span><span style="color:#E6EDF3">(() </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> effects.</span><span style="color:#D2A8FF">forEach</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">&#36;</span><span style="color:#FF7B72"> =></span><span style="color:#D2A8FF"> &#36;</span><span style="color:#E6EDF3">())), value </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> newValue)</span>
 <span style="color:#E6EDF3">}</span>
-<span style="color:#E6EDF3">window[</span><span style="color:#A5D6FF">'&#36;'</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span></span></code>
-</code-block>
+<span style="color:#E6EDF3">window[</span><span style="color:#A5D6FF">'&#36;'</span><span style="color:#E6EDF3">] </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span></span></code></code-block>
   `
 },c)

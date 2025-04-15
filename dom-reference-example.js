@@ -12,8 +12,7 @@ $(c => {
     
     ${framework() === 'vanilia' ? /*html*/`
 <code-file>dom-reference-example.js</code-file>
-<code-block>
-<code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'dom-reference-example'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'dom-reference-example'</span>
 
 <span style="color:#D2A8FF">&#36;</span><span style="color:#E6EDF3">(</span><span style="color:#FFA657">c</span><span style="color:#FF7B72"> =></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FFA657">  c</span><span style="color:#E6EDF3">.</span><span style="color:#D2A8FF">html</span><span style="color:#E6EDF3">&#96;</span>
@@ -26,14 +25,12 @@ $(c => {
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'react' ? /*html*/`
 <code-file>DomReferenceExample.jsx</code-file>
-<code-block>
-<code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useRef } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
+<code-block tabindex="0"><code><span style="color:#FF7B72">import</span><span style="color:#E6EDF3"> { useRef } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'react'</span>
 
 <span style="color:#FF7B72">export</span><span style="color:#FF7B72"> default</span><span style="color:#FF7B72"> function</span><span style="color:#D2A8FF"> DomReferenceExample</span><span style="color:#FFA657">() </span><span style="color:#E6EDF3">{</span>
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> buttonRef</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> useRef</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">null</span><span style="color:#E6EDF3">)</span>
@@ -46,14 +43,12 @@ $(c => {
 <span style="color:#E6EDF3">    &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> ref</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">buttonRef</span><span style="color:#FF7B72">}</span><span style="color:#79C0FF"> onClick</span><span style="color:#FF7B72">={</span><span style="color:#E6EDF3">handleClick</span><span style="color:#FF7B72">}</span><span style="color:#E6EDF3">>Log DOM Node&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  )</span>
 <span style="color:#E6EDF3">}</span>
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'vue' ? /*html*/`
 <code-file>DomReferenceExample.vue</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#79C0FF"> setup</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  import</span><span style="color:#E6EDF3"> { ref } </span><span style="color:#FF7B72">from</span><span style="color:#A5D6FF"> 'vue'</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#79C0FF"> buttonRef</span><span style="color:#FF7B72"> =</span><span style="color:#D2A8FF"> ref</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">null</span><span style="color:#E6EDF3">)</span>
@@ -66,14 +61,12 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">  &#x3C;</span><span style="color:#7EE787">button</span><span style="color:#79C0FF"> ref</span><span style="color:#E6EDF3">=</span><span style="color:#A5D6FF">"buttonRef"</span><span style="color:#E6EDF3"> @</span><span style="color:#79C0FF">click</span><span style="color:#E6EDF3">=</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">handleClick</span><span style="color:#E6EDF3">"</span><span style="color:#E6EDF3">>Log DOM Node&#x3C;/</span><span style="color:#7EE787">button</span><span style="color:#E6EDF3">></span>
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">template</span><span style="color:#E6EDF3">></span>
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
 
     ${framework() === 'svelte' ? /*html*/`
 <code-file>DomReferenceExample.svelte</code-file>
-<code-block>
-<code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
+<code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> buttonRef</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#D2A8FF"> handleClick</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
@@ -86,8 +79,7 @@ $(c => {
 
 
 
-</code>
-</code-block>
+</code></code-block>
     ` : ''}
   `
 },c)
