@@ -189,7 +189,11 @@ h6 { font: var(--font-light) var(--font-size-6)/var(--line-height-6) var(--font-
   opacity: 0.2;
 }
 
-code-block  {
+code-block {
+  display: block;
+}
+
+code-block pre {
   display: block;
   border: 1px solid #6666;
   padding: var(--font-size-4);
