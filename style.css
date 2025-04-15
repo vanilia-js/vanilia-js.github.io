@@ -207,21 +207,6 @@ code-file {
   font-weight: var(--font-medium);
 }
 
-code-block pre {
-  margin: 0;
-  white-space: pre;
-}
-
-code-block,
-code-block pre,
-code-block code {
-  overflow-x: auto;
-  white-space: pre;
-  word-wrap: normal;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-}
-
 main > * {
   display: block;
   padding: 6rem calc(var(--space-scaled) * 2);
