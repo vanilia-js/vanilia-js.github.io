@@ -183,7 +183,7 @@ $(c => {
 <code-block tabindex="0"><code><span style="color:#E6EDF3">&#x3C;</span><span style="color:#7EE787">script</span><span style="color:#E6EDF3">></span>
 <span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> { videoRef, currentTime } </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">props</span><span style="color:#E6EDF3">()</span>
 
-<span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> isPlaying </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span><span style="color:#E6EDF3">);</span>
+<span style="color:#FF7B72">  let</span><span style="color:#E6EDF3"> isPlaying </span><span style="color:#FF7B72">=</span><span style="color:#E6EDF3"> &#36;</span><span style="color:#D2A8FF">state</span><span style="color:#E6EDF3">(</span><span style="color:#79C0FF">false</span>
 
 <span style="color:#FF7B72">  const</span><span style="color:#D2A8FF"> togglePlay</span><span style="color:#FF7B72"> =</span><span style="color:#E6EDF3"> () </span><span style="color:#FF7B72">=></span><span style="color:#E6EDF3"> {</span>
 <span style="color:#FF7B72">    if</span><span style="color:#E6EDF3"> (videoRef </span><span style="color:#FF7B72">&#x26;&#x26;</span><span style="color:#E6EDF3"> isPlaying) videoRef.</span><span style="color:#D2A8FF">pause</span><span style="color:#E6EDF3">()</span>
