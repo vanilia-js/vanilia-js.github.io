@@ -201,6 +201,11 @@ code-block {
   overflow-x: scroll;
 }
 
+code {
+  display: block;
+  width: 100%;
+}
+
 code-file {
   display: inline-block;
   padding:  var(--font-size-6) var(--font-size-4);
