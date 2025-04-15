@@ -201,9 +201,11 @@ code-block {
   overflow-x: scroll;
 }
 
-code {
-  display: block;
-  width: 100%;
+@media (orientation: portrait) {
+  code {
+    display: block;
+    min-width: 100vw;
+  }
 }
 
 code-file {
