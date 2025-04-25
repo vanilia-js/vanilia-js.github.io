@@ -168,6 +168,10 @@ text {
   font-family: inherit;
 }
 
+strong {
+  font-weight: var(--font-bold);
+}
+
 /* utility */
 
 .mask {
