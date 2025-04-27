@@ -37,7 +37,7 @@ $(c => {
 <span style="color:#E6EDF3">},</span><span style="color:#79C0FF">c</span><span style="color:#E6EDF3">)</span>                            <span style="color:#8B949E">// pass name required to create component</span></code></code-block>
 
     <div>
-      <p>The component has an additional method (tagged template literal) <strong>html''</strong> that you can use to create a template (ContextualFragment):</p>
+      <p>The component has an additional method (tagged template literal) <strong>html&#96;&#96;</strong> that you can use to create a template (ContextualFragment):</p>
     </div>
 
 <code-block tabindex="0"><code><span style="color:#FF7B72">const</span><span style="color:#79C0FF"> c</span><span style="color:#FF7B72"> =</span><span style="color:#A5D6FF"> 'sample-counter'</span><span style="color:#8B949E">      // define component name</span>
