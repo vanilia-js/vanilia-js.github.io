@@ -7,7 +7,7 @@ $(c => {
     <h3>loops</h3>
     <example-explanation style="${framework() !== 'vanilia' ? 'opacity: 0' : ''}">
       <p>To loop over an array within the template, use the <strong>map()</strong> function, and for each item, return a template literal: <strong>&#36;{items.map(item => &#96;&lt;li&gt;&#36;{item}&lt;/li&gt;&#96;)}</strong>.</p> 
-      <p><strong>map()</strong> returns a new array, so to remove unwanted commas, use <strong>join('')</strong>.</p>
+      <p><strong>map()</strong> returns a new array, so to remove unwanted commas use <strong>join('')</strong>.</p>
     </example-explanation>
 
     ${framework() === 'vanilia' ? /*html*/`
