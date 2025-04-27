@@ -73,7 +73,7 @@ $(c => {
 <span style="color:#E6EDF3">&#x3C;/</span><span style="color:#7EE787">html</span><span style="color:#E6EDF3">></span></code></code-block>
 
     <div>    
-      <p>At the bottom we import component <strong>&lt;sample-counter&gt;</strong> that do not exists yet: <strong>&lt;script type="module" src="./sample-counter.js"&gt;&lt;/script&gt;</strong></p>
+      <p>At the bottom we import component <strong>&lt;sample-counter&gt;&lt;/sample-counter&gt;</strong> that do not exists yet: <strong>&lt;script type="module" src="./sample-counter.js"&gt;&lt;/script&gt;</strong>.</p>
       <br>
       <p>In the same folder create file <strong>sample-counter.js</strong> and write this code:</p>
     </div>
