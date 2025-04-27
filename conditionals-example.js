@@ -7,7 +7,7 @@ $(c => {
     <h3>conditionals</h3>
     <example-explanation style="${framework() !== 'vanilia' ? 'opacity: 0' : ''}">
       <p>To display content conditionally within the template, use expressions with comparison or logical operators.</p>
-      <p>For example to conditionally render different HTML based on a condition you can write an expression like <strong>&#36;{value() === true ? '&lt;p&gt;true&lt;/p&gt;' : '&lt;p&gt;false&lt;/p&gt;'}</strong></p>
+      <p>For example to conditionally render different HTML you can write an expression like <strong>&#36;{value() === true ? '&lt;p&gt;true&lt;/p&gt;' : '&lt;p&gt;false&lt;/p&gt;'}</strong></p>
     </example-explanation>
 
     ${framework() === 'vanilia' ? /*html*/`
